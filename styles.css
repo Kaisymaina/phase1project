@@ -1,0 +1,57 @@
+
+ /* styling the header */
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    color: rgb(189, 55, 189);
+    padding: 10px;
+    top: 0;
+    left: 0;
+    text-align: center;
+
+}
+body{
+    background-image: url('images/d6bedf3096364bd188208e9782d758aa.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+img{
+    width: 400px;
+    height: auto;
+}
+
+.content {
+    padding-top: 100px; 
+    
+}
+#lyrics-container{
+    background-color: rgb(74, 74, 141);
+}
+/* styling the input fields */
+.input-field,
+.input-field-1 {
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    padding: 1px;
+    border-radius: 20px;
+    border: none;
+}
+
+/* styling the placeholder */
+input::placeholder {
+    color: #0f0a0f;
+    font-style: italic;
+}
+
+/*styling the button*/
+#button {
+    background-color: rgb(100, 19, 100);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left:300px ;
+}
