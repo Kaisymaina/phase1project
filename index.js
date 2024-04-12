@@ -50,16 +50,16 @@ button.addEventListener("click", () => {
 
 //adding functionality to  the update button
 updateButton.addEventListener("click", () => {
-    const currentLyrics = lyricsContainer.textContent.trim();
-    if (currentLyrics) {
-    
-        lyricsInput.value = currentLyrics;
-        
-        saveButton.style.display = "inline";
+    const updatedLyrics = lyricsInput.value.trim();
+
+    if (updatedLyrics) { 
+        lyricsContainer.textContent = updatedLyrics; 
+        saveButton.style.display = "inline"; 
     } else {
-        alert("please enter lyrics first.");
+        alert("Please enter lyrics first."); 
     }
 });
+
 
 //adding functionality to the save button
 saveButton.addEventListener("click", () => {
