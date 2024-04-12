@@ -2,6 +2,8 @@
 
 "Lyrical Me" is a web application developed by Kaisy Maina that allows users to fetch song lyrics by inputting the artist and song name. Additionally, users can update lyrics for a specified artist and song, with options to save or delete the changes.
 
+This project utilizes the `fetch` function to fetch lyrics from an external API.
+
 The project can be accessed via the following GitHub link: [Lyrical Me Project](https://github.com/Kaisymaina/phase1project)
 
 ## It uses the following features:
@@ -17,13 +19,9 @@ The project can be accessed via the following GitHub link: [Lyrical Me Project](
 4. Use the "Save" button to save the updated lyrics.
 5. Use the "Delete" button to remove saved lyrics.
 
-## Technologies Used
-- JavaScript
-- HTML
-- CSS
+## The languages used:
+The languages used in the development of this project are HTML,CSS and JavaScript
 
-## Acknowledgements
-- This project utilizes the `fetch` function to fetch lyrics from an external API.
 
 ## Author
 - Kaisy Maina
