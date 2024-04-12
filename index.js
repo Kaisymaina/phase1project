@@ -5,6 +5,18 @@ const artistInput = document.getElementById('artist');
 const songInput = document.getElementById('song');
 const lyricsInput = document.getElementById('lyricsInput');
 
+//fetching lyrics from the api
+async function fetchLyrics(artist, song) {
+    try {
+        const response = await fetch(`${apiUrl}${artist}/${song}`);
+        const data = await response.json();
+        return data.lyrics;
+    } catch (error) {
+        console.error("Error fetching lyrics:", error);
+        return null;
+    }
+}
+
 //defining the buttons
 const button = document.getElementById('button');
 const updateButton = document.getElementById('updateButton');
@@ -64,22 +76,15 @@ saveButton.addEventListener("click", () => {
     }
 });
 
+function saveLyrics(artist, song, lyrics) {
+    const key = `${artist}_${song}`;
+    localStorage.setItem(key, lyrics);
+}
+
+
 
 
 //adding functionality to the delete button
-
-
-
-async function fetchLyrics(artist, song) {
-    try {
-        const response = await fetch(`${apiUrl}${artist}/${song}`);
-        const data = await response.json();
-        return data.lyrics;
-    } catch (error) {
-        console.error("Error fetching lyrics:", error);
-        return null;
-    }
-}
 
 deleteButton.addEventListener("click", () => {
     
@@ -94,7 +99,3 @@ deleteButton.addEventListener("click", () => {
 
 
 
-
-function saveLyrics(artist, song, lyrics) {
-
-}
