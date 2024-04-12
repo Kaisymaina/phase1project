@@ -68,9 +68,7 @@ saveButton.addEventListener("click", () => {
 
 //adding functionality to the delete button
 
-deleteButton.addEventListener("click", () => {
-  
-});
+
 
 async function fetchLyrics(artist, song) {
     try {
@@ -90,7 +88,11 @@ deleteButton.addEventListener("click", () => {
     lyricsInput.value = "";
     lyricsContainer.textContent = "";
     saveButton.style.display = "none";
+    const key = `${artistInput.value.trim()}_${songInput.value.trim()}`;
+        localStorage.removeItem(key);
 });
+
+
 
 
 function saveLyrics(artist, song, lyrics) {
