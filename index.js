@@ -4,11 +4,14 @@ const lyricsContainer = document.querySelector("#lyrics-container");
 const artistInput = document.getElementById('artist');
 const songInput = document.getElementById('song');
 const lyricsInput = document.getElementById('lyricsInput');
+
+//defining the buttons
 const button = document.getElementById('button');
 const updateButton = document.getElementById('updateButton');
 const deleteButton = document.getElementById('deleteButton');
 const saveButton = document.getElementById('saveButton');
-////////////////////////////////////////////////////////////////////////////////////////
+
+//
 button.addEventListener("click", () => {
     const artist = artistInput.value.trim();
     const song = songInput.value.trim();
@@ -29,7 +32,11 @@ button.addEventListener("click", () => {
         lyricsContainer.textContent = "Please enter both the artist and song name, or write your own lyrics.";
     }
 });
-/////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+//adding functionality to  the update button
 updateButton.addEventListener("click", () => {
     const currentLyrics = lyricsContainer.textContent.trim();
     if (currentLyrics) {
@@ -38,11 +45,11 @@ updateButton.addEventListener("click", () => {
         
         saveButton.style.display = "inline";
     } else {
-        alert("No lyrics to update. Please fetch or enter lyrics first.");
+        alert("please enter lyrics first.");
     }
 });
 
-///////////////////////////////////////////////////////////////////////////////////////////
+//adding functionality to the save button
 saveButton.addEventListener("click", () => {
     const artist = artistInput.value.trim();
     const song = songInput.value.trim();
@@ -57,7 +64,9 @@ saveButton.addEventListener("click", () => {
     }
 });
 
-////////////////////////////////////////////////////////////////////////////////////////
+
+
+//adding functionality to the delete button
 
 deleteButton.addEventListener("click", () => {
   
