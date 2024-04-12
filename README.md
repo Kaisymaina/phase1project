@@ -26,3 +26,6 @@ The languages used in the development of this project are HTML,CSS and JavaScrip
 ## Author
 - Kaisy Maina
 
+## Copyright and License
+© 2024 Kaisy Maina
+
